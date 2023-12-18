@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금호석유화학</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+
+            <div id="in_header">
+
+                <div id="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+
+                <ul id="menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">제품소개</a></li>
+                    <li><a href="">투자정보</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">홍보센터</a></li>
+                    <li><a href="">EGS경영</a></li>
+                </ul>
+
+                <div id="side">
+                    <input type="text" placeholder="search">
+                    <button><img src="img/search.png" alt=""></button>
+                    <div id="br"><img src="img/Icon feather-menu.png" alt="br"></div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- header end -->
+
+        <!-- 메인 콘텐츠 section_1 -->
+        <div class="swiper swiper_1 ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide con">
+                    <p>최고의 기술과 최적의 제품으로<br/>
+                    더나은 내일을 만드는 기업</p>
+                    <img src="img/section_1.png" alt=""></div>
+                <div class="swiper-slide con">
+                    <p>길위에서 집안까지 세상의<br/>
+                        모든 만남을 만듬니다
+                    </p>
+                    <img src="img/section_1_2.png" alt=""></div>
+                <div class="swiper-slide con">
+                    <p>풍요로운 삶의 원천인  <br/>
+                    환경을 돌보고 지켜나갑니다.</p>
+                    <img src="img/section_1_3.png" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <script>
+
+            const swiper = new Swiper('.swiper_1', {
+                // Optional parameters
+    
+                //direction: 'vertical',
+                //=> 슬라이드 방향
+    
+                autoplay: {
+                    delay: 2000,
+                    pauseOnMouseEnter: true,
+                    //=>마우스를 올렸을때 슬라이드가 정지된다.
+                },
+                // => 자동재생 설정
+    
+                loop: true,
+                //=>반복 설정
+    
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable : true,
+                    //=>페이지네이션 클릭 활성화 ooo <<
+                },
+    
+                // Navigation arrows
+                navigation : {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+                //=>화살표 설정
+    
+                
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    draggable: true,
+                },
+            });
+    
+        </script>
+
+        <!-- section_1 end -->
+    
+
+        <section id="section_2">
+            <h1>Business</h1>
+
+            <div id="container">
+                <div id="sub_1">
+                    <div class="conn" id="con_1"> 
+                        <img src="img/synthetic_rubber.png" alt="합성고무"> 
+                        <h3>합성고무</h3>
+                        <p>합성고무 글로벌 리더로서 범용 제품인 SBR과 BR에서 타이어효율<br/>
+                            등급제에 최적화된 고기능성 제품인 SSBR과 NdBR에 이르기까지<br/>
+                            최고의 품질의 합성고무를 제공합니다.</p>
+                        <div id="down">
+                            <p>SBR</p> <p>HBR</p> <p>LBR</p>
+                        </div>    
+                    </div>
+                    <div class="conn" id="con_2">
+                        <img src="img/synthetic_resin.png" alt="합성수지"> 
+                        <h3>합성수지</h3>
+                        <p>식품 용기에서 자동차에 이르기까지일상 생활에 필요한 대부분의<br/>
+                            수지제품을 제공합니다. 에너지 효율성 및 친환경성 등 속성이 강<br/>
+                            화된 고기능성제품군으로 영역을 확대 하고 있습니다.</p>
+                        <div id="down">
+                            <p>GppS</p> <p>HlpS</p> <p>ABS</p>
+                        </div>    
+                    </div>
+                    <div class="conn" id="con_3">
+                        <img src="img/fine_chemistry.png" alt="정밀화학"> 
+                        <h3>정밀화학</h3>
+                        <p>타이어 등 고무 제품의 안정성과 내구성을 높이는 고무 약품을 제<br/>
+                            공합니다. 산화방지제와 노화방지제를중심으로세계적인 품질과 <br/>
+                            생산능력을 보유하고 있습니다.</p>
+                        <div id="down">
+                            <p>노화방지제</p> <p>가황촉진제</p> <p>페인트첨가제</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sub_2">
+                    <div class="conn">
+                        <img src="img/Carbon_nanotube.png" alt="나노탄소"> 
+                        <h3>나노탄소</h3>
+                        <p>철의 100배 인장강도와 구리의 1천배전기전도성을 가진 탄소나<br/>
+                            노튜브를 공급합니다. 합성수지, 합성고무제품과의 복합소재 개<br/>
+                            발을 통해 소재 혁신을 주도하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>나노탄소튜브</p>
+                        </div>
+                    </div>
+                    <div class="conn">
+                        <img src="img/energy.png" alt="에너지"> 
+                        <h3>에너지</h3>
+                        <p>집단에너지사업자로서 열병합발전소운영을 통해 생산한 스팀과<br/> 
+                            전기를 공급합니다. 태양열, 태양광, TDF,바이오매스 등 신재생<br/>
+                            에너지 영역으로범위를 확대하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>에너지</p>
+                        </div>
+                    </div>
+                    <div class="conn">
+                        <img src="img/building_materials.png" alt="건자재"> 
+                        <h3>건자재</h3>
+                        <p>친환경 건자재 브랜드 ‘휴그린’을통해 친환경 주거환경을 제공<br/>
+                            합니다.유해 중금속과 독성 물질이 없는ABS창호를 중심으로 창<br/>
+                            호시스템의 기준을 높여가고 있습니다.</p>
+                        <div id="down_2">
+                            <p>건자재</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="more">
+                    <a href="#">more<span>+</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_sub2">
+            <h1>Business</h1>
+
+            <div id="container">
+                <div id="sub_1">
+                    <div class="conn" id="con_1"> 
+                        <img src="img/synthetic_rubber.png" alt="합성고무"> 
+                        <h3>합성고무</h3>
+                        <p>합성고무 글로벌 리더로서 범용 제품인 SBR과 BR에서 타이어효율<br/>
+                            등급제에 최적화된 고기능성 제품인 SSBR과 NdBR에 이르기까지<br/>
+                            최고의 품질의 합성고무를 제공합니다.</p>
+                        <div id="down">
+                            <p>SBR</p> <p>HBR</p> <p>LBR</p>
+                        </div>    
+                    </div>
+                    <div class="conn" id="con_2">
+                        <img src="img/synthetic_resin.png" alt="합성수지"> 
+                        <h3>합성수지</h3>
+                        <p>식품 용기에서 자동차에 이르기까지일상 생활에 필요한 대부분의<br/>
+                            수지제품을 제공합니다. 에너지 효율성 및 친환경성 등 속성이 강<br/>
+                            화된 고기능성제품군으로 영역을 확대 하고 있습니다.</p>
+                        <div id="down">
+                            <p>GppS</p> <p>HlpS</p> <p>ABS</p>
+                        </div>    
+                    </div>
+                    
+                </div>
+
+                <div id="sub_2">
+                    <div class="conn" id="con_3">
+                        <img src="img/fine_chemistry.png" alt="정밀화학"> 
+                        <h3>정밀화학</h3>
+                        <p>타이어 등 고무 제품의 안정성과 내구성을 높이는 고무 약품을 제<br/>
+                            공합니다. 산화방지제와 노화방지제를중심으로세계적인 품질과 <br/>
+                            생산능력을 보유하고 있습니다.</p>
+                        <div id="down">
+                            <p>노화방지제</p> <p>가황촉진제</p> <p>페인트첨가제</p>
+                        </div>
+                    </div>
+
+                    <div class="conn" id="con_4">
+                        <img src="img/Carbon_nanotube.png" alt="나노탄소"> 
+                        <h3>나노탄소</h3>
+                        <p>철의 100배 인장강도와 구리의 1천배전기전도성을 가진 탄소나<br/>
+                            노튜브를 공급합니다. 합성수지, 합성고무제품과의 복합소재 개<br/>
+                            발을 통해 소재 혁신을 주도하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>나노탄소튜브</p>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <div id="sub_3">
+                    <div class="conn" id="con_5">
+                        <img src="img/energy.png" alt="에너지"> 
+                        <h3>에너지</h3>
+                        <p>집단에너지사업자로서 열병합발전소운영을 통해 생산한 스팀과<br/> 
+                            전기를 공급합니다. 태양열, 태양광, TDF,바이오매스 등 신재생<br/>
+                            에너지 영역으로범위를 확대하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>에너지</p>
+                        </div>
+                    </div>
+                    <div class="conn" id="con_6">
+                        <img src="img/building_materials.png" alt="건자재"> 
+                        <h3>건자재</h3>
+                        <p>친환경 건자재 브랜드 ‘휴그린’을통해 친환경 주거환경을 제공<br/>
+                            합니다.유해 중금속과 독성 물질이 없는ABS창호를 중심으로 창<br/>
+                            호시스템의 기준을 높여가고 있습니다.</p>
+                        <div id="down_2">
+                            <p>건자재</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="more">
+                    <a href="#">more<span>+</span></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section_sub3">
+
+            <h1>Business</h1>
+            
+            <swiper-container class="mySwiper">
+                <swiper-slide>
+                    <div class="conn" id="con_1"> 
+                        <img src="img/synthetic_rubber.png" alt="합성고무"> 
+                        <h3>합성고무</h3>
+                        <p>합성고무 글로벌 리더로서 범용 제품인 SBR과 BR에서 타이어효율<br/>
+                            등급제에 최적화된 고기능성 제품인 SSBR과 NdBR에 이르기까지<br/>
+                            최고의 품질의 합성고무를 제공합니다.</p>
+                        <div id="down">
+                            <p>SBR</p> <p>HBR</p> <p>LBR</p>
+                        </div>    
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="conn" id="con_2">
+                        <img src="img/synthetic_resin.png" alt="합성수지"> 
+                        <h3>합성수지</h3>
+                        <p>식품 용기에서 자동차에 이르기까지일상 생활에 필요한 대부분의<br/>
+                            수지제품을 제공합니다. 에너지 효율성 및 친환경성 등 속성이 강<br/>
+                            화된 고기능성제품군으로 영역을 확대 하고 있습니다.</p>
+                        <div id="down">
+                            <p>GppS</p> <p>HlpS</p> <p>ABS</p>
+                        </div>    
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="conn" id="con_3">
+                        <img src="img/fine_chemistry.png" alt="정밀화학"> 
+                        <h3>정밀화학</h3>
+                        <p>타이어 등 고무 제품의 안정성과 내구성을 높이는 고무 약품을 제<br/>
+                            공합니다. 산화방지제와 노화방지제를중심으로세계적인 품질과 <br/>
+                            생산능력을 보유하고 있습니다.</p>
+                        <div id="down">
+                            <p>노화방지제</p> <p>가황촉진제</p> <p>페인트첨가제</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="conn" id="con_4">
+                        <img src="img/Carbon_nanotube.png" alt="나노탄소"> 
+                        <h3>나노탄소</h3>
+                        <p>철의 100배 인장강도와 구리의 1천배전기전도성을 가진 탄소나<br/>
+                            노튜브를 공급합니다. 합성수지, 합성고무제품과의 복합소재 개<br/>
+                            발을 통해 소재 혁신을 주도하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>나노탄소튜브</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="conn" id="con_5">
+                        <img src="img/energy.png" alt="에너지"> 
+                        <h3>에너지</h3>
+                        <p>집단에너지사업자로서 열병합발전소운영을 통해 생산한 스팀과<br/> 
+                            전기를 공급합니다. 태양열, 태양광, TDF,바이오매스 등 신재생<br/>
+                            에너지 영역으로범위를 확대하고 있습니다.</p>
+                        <div id="down_2">
+                            <p>에너지</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="conn" id="con_6">
+                        <img src="img/building_materials.png" alt="건자재"> 
+                        <h3>건자재</h3>
+                        <p>친환경 건자재 브랜드 ‘휴그린’을통해 친환경 주거환경을 제공<br/>
+                            합니다.유해 중금속과 독성 물질이 없는ABS창호를 중심으로 창<br/>
+                            호시스템의 기준을 높여가고 있습니다.</p>
+                        <div id="down_2">
+                            <p>건자재</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+              </swiper-container>
+
+              <div id="more">
+                <a href="#">more<span>+</span></a>
+              </div>
+            
+            
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        </section>
+
+    
+        
+        
+        <!-- section_sub2 end -->
+
+        <section id="section_3">
+            <h1>ESG</h1>
+            <div id="container">
+                <div class="conn_2" id="conn_2_1">
+                    <img src="img/conn_2_1.png" alt="1">
+                    <h3>환경안전경영</h3>
+                    <p>환경은 경영에 우선한다는 기업철학을 바탕으로 모든<br/>
+                        경영계획을 수립 및 운영하고 있습니다.</p>
+                </div>
+
+                <div class="conn_2" id="conn_2_2">
+                    <img src="img/conn_2_2.png" alt="2">
+                    <h3>ESG경영</h3>
+                    <p>지속가능한 미래를 위해 ESG경영기반을 구축하고,이해관계자<br/>
+                        와 투명하게 소통하는 ESG경영을 실천해나갈 것입니다.</p>
+                </div>
+
+                <div class="conn_2" id="conn_2_3">
+                    <img src="img/conn_2_3.png" alt="3">
+                    <h3>사회공헌</h3>
+                    <p>기업활동이 벌어지는 지역사회는 물론 사회소외계층이<br>
+                        스스로 자립할 수 있도록 지원하고 있습니다. </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- section_3 end -->
+
+        <section id="section_4">
+            <h1>NEWS</h1>
+            <div id="container">
+
+                <div class="conn_3" id="conn_3_1">
+                    <p>2023.05.17 <span>이데미츠코산-금호석유화학-스미토모 3社, 바이오원료 공급망 구축을 위한 MOU 체결</span></p>
+                    <a href="#">+</a>  
+                </div>
+
+                <div class="conn_3" id="conn_3_2">
+                    <p>2023.03.09 <span>22년 CDP(탄소정보공개프로젝트) 지표, D단계에서 B단계로 1년만에 네 단계 상승</span></p>
+                    <a href="#">+</a> 
+                </div>
+
+                <div class="conn_3" id="conn_3_3">
+                    <p>2023.03.08 <span>MSCI ESG평가 ‘BB등급’ 획득… 환경(E), 지배구조(G) 부문 개선 성과 인정 받아</span></p>
+                    <a href="#">+</a> 
+                </div>
+
+                <div id="more">
+                    <a href="#">more<span>+</span></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section_4_m">
+            <h1>NEWS</h1>
+            <div id="container">
+
+                <div class="conn_3" id="conn_3_1">
+                    <p>2023.05.17 </br> <span>이데미츠코산-금호석유화학-스미토모 3社, 바이오원료 공급망 구축을 위한 MOU 체결</span></p>  
+                </div>
+
+                <div class="conn_3" id="conn_3_2">
+                    <p>2023.03.09 </br> <span>22년 CDP(탄소정보공개프로젝트) 지표, D단계에서 B단계로 1년만에 네 단계 상승</span></p>
+                     
+                </div>
+
+                <div class="conn_3" id="conn_3_3">
+                    <p>2023.03.08 </br> <span>MSCI ESG평가 ‘BB등급’ 획득… 환경(E), 지배구조(G) 부문 개선 성과 인정 받아</span></p>
+                    
+                </div>
+
+                <div id="more">
+                    <a href="#">more<span>+</span></a>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <!-- section_4 end -->
+
+        <section id="section_5">
+            <div class="conn_4"  id="conn_4_1">
+                
+                <h1>금호석유화학과 함께할<br/>
+                    당신을 초대합니다.</h1>
+                
+                <div class="more_2" id="em">
+                    <p>채용안내 <span>+</span></p>
+                </div>
+
+            </div>
+
+            <div class="conn_4" id="conn_4_2">
+                <h1>금호석유화학의 투자정보를<br/>
+                    쉽고 빠르게 제공합니다.</h1>
+
+                <div class="more_2" id="inv">
+                    <p>투자정보 <span>+</span></p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+
+            <div id="in_footer">
+
+                <div id="left">
+
+                    <h1>금호석유화학</h1>
+
+                    <h2>개인정보처리방침  |  윤리규정  |  법적고지  |  사회공헌 임직원공간  |  온라인제보실</h2>
+
+                    <p>서울시 중구 청계천로 100(수표동) 시그니쳐타워 동관 10~14층 <span>TEL. 02-6961-1114</span></p>
+                </div>
+
+                <div id="right">
+
+                    <h1>사이트맵 + <span>패밀리사이트 +</span></h1>
+
+                    <img src="img/footer.png" alt="">
+
+                    <p>COPYRIGHT © 2014 KUMHO PETROCHEMICAL. ALL RIGHTS RESERVED</p>
+
+                </div>
+
+            </div>
+
+            <div id="in_footer_m">
+
+                <h1>금호석유화학</h1>
+
+                <p><span>개인정보처리방침</span>ㅣ윤리규정ㅣ법적고지ㅣ사회공헌ㅣ임직원공간
+                    온라인제보실</p>
+
+                <p>서울시 중구 청꼐천로 100(수표동) 시그니쳐타워 동관 10-14층
+                    TEL 02-6961-1114</p>
+                    
+                <p>COPYRIGHT © 2014 KUMHO PETROCHEMICAL. 
+                    ALL RIGHTS RESERVED.</p>
+
+            </div>
+            
+            
+        </footer>
+
+        
+
+            
+            
+            
+    
+
+    </div>
+
+</body>
+</html>
